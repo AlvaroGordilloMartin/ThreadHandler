@@ -16,4 +16,5 @@
     <string name="btnHandler">Handler</string>
     <string name="btnStart">Comenzar</string>
     <string name="btnAsyn">Asyn</string>
+    <string name="btnEnd">Finalizar</string>
 </resources>
