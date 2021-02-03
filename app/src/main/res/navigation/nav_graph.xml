@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.threadhandler.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_handlerFragment"
+            app:destination="@id/handlerFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_conHiloFragment"
+            app:destination="@id/conHiloFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_sinHiloFragment"
+            app:destination="@id/sinHiloFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_asyntacksFeragment"
+            app:destination="@id/asyntacksFeragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/conHiloFragment"
+        android:name="com.example.threadhandler.ConHiloFragment"
+        android:label="ConHiloFragment" />
+    <fragment
+        android:id="@+id/sinHiloFragment"
+        android:name="com.example.threadhandler.SinHiloFragment"
+        android:label="SinHiloFragment" />
+    <fragment
+        android:id="@+id/handlerFragment"
+        android:name="com.example.threadhandler.HandlerFragment"
+        android:label="HandlerFragment" />
+    <fragment
+        android:id="@+id/asyntacksFeragment"
+        android:name="com.example.threadhandler.AsyntacksFragment"
+        android:label="fragment_asyntacks_feragment"
+        tools:layout="@layout/fragment_asyntacks_feragment" />
+</navigation>
